@@ -1,8 +1,12 @@
 import React from 'react'
 import "./Navbar.css"
 import { NavLink } from 'react-router-dom'
-// import { IoMenu } from "react-icons/io5";
-// import { MdSearch } from "react-icons/md";
+import { IoMenu } from "react-icons/io5";
+import { FiShoppingCart } from "react-icons/fi";
+import { FaRegUser , FaRegHeart } from "react-icons/fa6";
+import { BiHome } from "react-icons/bi";
+import { RiMenuSearchLine } from "react-icons/ri";
+ 
 function Navbar() {
     return (
         <div className='container'>
@@ -46,7 +50,7 @@ function Navbar() {
                 <button className="navbar__catagory_btns">
                     <NavLink  className="navbar__catagory_btn" to={"katalog"}>
 
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="4.3175" y="10.2198" width="17" height="11" rx="1.5" fill="#7000FF" />
                         <rect x="4.3175" y="10.2198" width="17" height="11" rx="1.5" stroke="#7000FF" />
                         <rect x="5.41748" y="11.3198" width="14.8" height="8.8" rx="1" fill="#F0F0FF" />
@@ -59,7 +63,8 @@ function Navbar() {
                         </mask>
                         <path d="M4.82751 8.31985C4.82751 7.43619 5.54386 6.71985 6.42751 6.71985H19.2075C20.0912 6.71985 20.8075 7.43619 20.8075 8.31985H4.82751Z" fill="#7000FF" />
                         <path d="M4.82751 8.31985C4.82751 6.55254 6.2602 5.11985 8.02751 5.11985H17.6075C19.3748 5.11985 20.8075 6.55254 20.8075 8.31985C20.8075 8.31985 20.0912 8.31985 19.2075 8.31985H6.42751C5.54386 8.31985 4.82751 8.31985 4.82751 8.31985ZM20.8075 8.31985H4.82751H20.8075ZM4.82751 8.31985V6.71985V8.31985ZM20.8075 6.71985V8.31985V6.71985Z" fill="#7000FF" mask="url(#path-5-inside-2_1_18531)" />
-                    </svg>
+                    </svg> */}
+                    <IoMenu style={{width:"23px", height:"23px"}}/>
 
 
                     {/* <IoMenu /> */}
@@ -73,12 +78,14 @@ function Navbar() {
                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0551 6.5C12.0551 9.2614 9.81645 11.5 7.05505 11.5C4.29363 11.5 2.05505 9.2614 2.05505 6.5C2.05505 3.73858 4.29363 1.5 7.05505 1.5C9.81645 1.5 12.0551 3.73858 12.0551 6.5ZM10.8949 11.7451C9.81905 12.5341 8.49145 13 7.05505 13C3.4652 13 0.555054 10.0899 0.555054 6.5C0.555054 2.91015 3.4652 0 7.05505 0C10.645 0 13.5551 2.91015 13.5551 6.5C13.5551 7.9364 13.0892 9.264 12.3002 10.3398L16.2641 14.3036C16.6521 14.6917 16.6521 15.3209 16.2641 15.709C15.876 16.097 15.2468 16.097 14.8587 15.709L10.8949 11.7451Z" fill="#595B66" />
                 </svg>
+          
+
                 </button></div>
                 <ul className="navbar__collaction">
                         <li className='navbar__item' id='none'>
-                            <NavLink className="Navlink" to={"/"}>
+                            <NavLink className="Navlink link" to={"/"}>
 
-                        <svg data-v-b2fd8610="" width="28" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                        {/* <svg data-v-b2fd8610="" width="28" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
 <g id="Icon">
 <g id="Icon_2">
 <path d="M14.5001 7.54553C14.1116 7.54553 13.7296 7.562 13.351 7.59492L13.3444 12.9357H15.6493V7.59492C15.2706 7.54553 14.8887 7.54553 14.5001 7.54553Z" fill="#1F2026"></path>
@@ -86,7 +93,8 @@ function Navbar() {
 <path d="M14.5 2C7.87258 2 2.5 7.37258 2.5 14C2.5 20.6274 7.87258 26 14.5 26C21.1274 26 26.5 20.6274 26.5 14C26.5 7.37258 21.1274 2 14.5 2ZM4 14C4 8.20101 8.70101 3.5 14.5 3.5C20.299 3.5 25 8.20101 25 14C25 19.799 20.299 24.5 14.5 24.5C8.70101 24.5 4 19.799 4 14Z" fill="#1F2026"></path>
 </g>
 </g>
-</svg>
+</svg> */}
+    <BiHome />
 <p className='navbar__bottom__bar'>
 
 Bosh sahifa
@@ -95,9 +103,9 @@ Bosh sahifa
 
                         </li>
                         <li className='navbar__item' id='none'>
-                            <NavLink className="Navlink" to={"Katalog"}>
+                            <NavLink className="Navlink link" to={"Katalog"}>
 
-                        <svg data-v-b2fd8610="" width="28" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                        {/* <svg data-v-b2fd8610="" width="28" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
 <g id="Icon">
 <g id="Icon_2">
 <path d="M1.5 12.5C1.5 7.25329 5.75329 3 11 3C16.2467 3 20.5 7.25329 20.5 12.5C20.5 14.853 19.6445 17.0062 18.2276 18.6656L24.2795 24.6993C24.5728 24.9917 24.5735 25.4666 24.2811 25.7599C23.9886 26.0532 23.5138 26.054 23.2204 25.7615L17.1671 19.7264C15.5075 21.144 13.3537 22 11 22C5.75329 22 1.5 17.7467 1.5 12.5ZM11 4.5C6.58172 4.5 3 8.08172 3 12.5C3 16.9183 6.58172 20.5 11 20.5C15.4183 20.5 19 16.9183 19 12.5C19 8.08172 15.4183 4.5 11 4.5Z" fill="#1F2026"></path>
@@ -106,7 +114,9 @@ Bosh sahifa
 <path d="M22.75 17.5C22.3358 17.5 22 17.8358 22 18.25C22 18.6642 22.3358 19 22.75 19H26.75C27.1642 19 27.5 18.6642 27.5 18.25C27.5 17.8358 27.1642 17.5 26.75 17.5H22.75Z" fill="#1F2026"></path>
 </g>
 </g>
-</svg>
+</svg> */}
+<RiMenuSearchLine />
+
 <p className='navbar__bottom__bar'>
 
  
@@ -117,9 +127,10 @@ Katalog
                         <li className='navbar__item'>
                             <NavLink className="Navlink" to={"Login"}>
 
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {/* <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5478 3C10.3387 3 8.54785 4.79086 8.54785 7V8C8.54785 10.2091 10.3387 12 12.5478 12C14.7569 12 16.5478 10.2091 16.5478 8V7C16.5478 4.79086 14.7569 3 12.5478 3ZM10.0478 7C10.0478 5.61929 11.1671 4.5 12.5478 4.5C13.9285 4.5 15.0478 5.61929 15.0478 7V8C15.0478 9.38071 13.9285 10.5 12.5478 10.5C11.1671 10.5 10.0478 9.38071 10.0478 8V7ZM6.05017 19.3686C6.52106 16.2577 9.56588 14.5 12.55 14.5C15.5336 14.5 18.5788 16.2577 19.0497 19.3686C19.0524 19.3866 19.0503 19.3972 19.0478 19.4048C19.0448 19.4137 19.0381 19.4269 19.0237 19.442C18.9931 19.4741 18.9372 19.5039 18.8649 19.5039H6.23503C6.16272 19.5039 6.10683 19.4741 6.07623 19.442C6.06179 19.4269 6.05511 19.4137 6.05212 19.4048C6.04959 19.3972 6.04746 19.3865 6.05017 19.3686ZM12.55 13C9.12106 13 5.18822 15.0404 4.56707 19.1441C4.40409 20.2208 5.30512 21.0039 6.23503 21.0039H18.8649C19.7948 21.0039 20.6958 20.2208 20.5328 19.1441C19.9116 15.0404 15.9784 13 12.55 13Z" fill="#1F2026"/>
-</svg>
+</svg> */}
+<FaRegUser/>
 <p className='navbar__bottom__bar'>
 
  
@@ -130,9 +141,10 @@ Kirish
                         <li className='navbar__item'>
                             <NavLink className="Navlink" to={"Wishes"}>
 
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {/* <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10785 5.5C5.8772 5.5 4.10785 7.30906 4.10785 9.5C4.10785 10.4282 4.48469 11.4436 5.15655 12.5105C5.82477 13.5716 6.74933 14.6274 7.75912 15.6219C9.16554 17.007 10.6396 18.1879 11.7786 19.1003C12.0812 19.3427 12.3601 19.5661 12.6078 19.7694C12.8555 19.5661 13.1344 19.3427 13.437 19.1003C14.576 18.1879 16.0501 17.007 17.4565 15.6219C18.4663 14.6274 19.3909 13.5716 20.0591 12.5105C20.731 11.4436 21.1078 10.4282 21.1078 9.5C21.1078 7.30898 19.3392 5.5 17.1078 5.5C14.9551 5.5 13.6816 7.20226 13.334 7.74742C12.9967 8.27655 12.2189 8.27653 11.8816 7.74742C11.534 7.20225 10.2606 5.5 8.10785 5.5ZM2.60785 9.5C2.60785 6.49094 5.0385 4 8.10785 4C10.3393 4 11.8327 5.30207 12.6078 6.21581C13.3829 5.30207 14.8764 4 17.1078 4C20.178 4 22.6078 6.49102 22.6078 9.5C22.6078 10.8218 22.0784 12.1189 21.3284 13.3098C20.5747 14.5066 19.5618 15.6539 18.5091 16.6906C17.0507 18.1269 15.4158 19.4384 14.258 20.3672C13.7727 20.7565 13.3712 21.0786 13.1017 21.3144C12.8189 21.5619 12.3967 21.5619 12.1139 21.3144C11.8444 21.0786 11.4429 20.7565 10.9576 20.3672C9.79986 19.4384 8.16497 18.1269 6.70658 16.6906C5.65387 15.6539 4.64093 14.5066 3.88727 13.3098C3.13726 12.1189 2.60785 10.8218 2.60785 9.5Z" fill="#1F2026"/>
-</svg>
+</svg> */}
+<FaRegHeart/>
 <p className='navbar__bottom__bar'>
 
  
@@ -143,9 +155,11 @@ Saralangan
                         <li className='navbar__item'>
                             <NavLink className="Navlink" to={"Cart"}>
 
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {/* <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.65784 6.5C9.65784 4.88779 10.898 3.5 12.6578 3.5C14.4176 3.5 15.6578 4.88779 15.6578 6.5V7.5H9.65784V6.5ZM8.15784 9V11.5H9.65784V9H15.6578V11.5H17.1578V9H19.1578V19.75C19.1578 20.1642 18.822 20.5 18.4078 20.5H6.90784C6.49363 20.5 6.15784 20.1642 6.15784 19.75V9H8.15784ZM8.15784 7.5V6.5C8.15784 4.11221 10.0177 2 12.6578 2C15.298 2 17.1578 4.11221 17.1578 6.5V7.5H19.9078H20.6578V8.25V19.75C20.6578 20.9926 19.6504 22 18.4078 22H6.90784C5.6652 22 4.65784 20.9926 4.65784 19.75V8.25V7.5H5.40784H8.15784Z" fill="#1F2026"/>
-</svg>
+</svg> */}
+<FiShoppingCart />
+
 <p className='navbar__bottom__bar'>
 
  

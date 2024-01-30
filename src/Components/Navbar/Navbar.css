@@ -88,7 +88,12 @@
     align-items: center;
     justify-content: center;
 }
-
+.Navlink svg{
+    font-size: 18px;
+}
+.link svg{
+    font-size: 22px;
+}
 /* .navbar__item a.active  {
 } */
  
