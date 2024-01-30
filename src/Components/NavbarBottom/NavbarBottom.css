@@ -107,5 +107,10 @@
     }
 
 }
+@media screen and (max-width: 400px){
+.rooms{
+    font-size: 12px;
+}
+}
 
 /* NavbarBottom end */
