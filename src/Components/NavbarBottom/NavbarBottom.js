@@ -26,10 +26,10 @@ function NavbarBottom() {
     <div className='container'>
       <div className="slesh">
 
-        <div className="tur">
+        {/* <div className="tur">
 
           <h3 className='rooms'>Muddatli to'lov</h3>
-        </div>
+        </div> */}
         <div className="navbar__bottom">
           {/* {
                 DATA?.map((el, inx)=><p key={inx}>{el}</p>)

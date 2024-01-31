@@ -148,7 +148,7 @@ Kirish
 <p className='navbar__bottom__bar'>
 
  
-Saralangan
+istaklar
 </p>
 </NavLink>
                         </li>

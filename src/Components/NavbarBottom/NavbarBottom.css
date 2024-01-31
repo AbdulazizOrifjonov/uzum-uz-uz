@@ -8,9 +8,11 @@
     overflow: auto;
     justify-content: space-between;
     white-space: nowrap;
-    scroll-snap-stop: var(--bg-gold);
+    /* scroll-snap-stop: var(--bg-gold); */
     display: flex;
     align-items: center;
+    width: auto;
+
 }
 
  
@@ -86,13 +88,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .navbar__bottom {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* width: calc(100% -40px);
-        margin: auto; */
-    }
+    
 
     .slesh {
         display: flex;
@@ -108,9 +104,7 @@
 
 }
 @media screen and (max-width: 400px){
-.rooms{
-    font-size: 12px;
-}
+ 
 }
 
 /* NavbarBottom end */
