@@ -13,7 +13,7 @@ function Navbar() {
     const location = useLocation();
 
     if (location.pathname.includes('login') || location.pathname.includes('admin')) {
-      return null; // or <></> if you prefer
+      return  <></> 
     }
     
     return (

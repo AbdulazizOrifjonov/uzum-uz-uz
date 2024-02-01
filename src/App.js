@@ -12,11 +12,13 @@ import NavbarBottom from './Components/NavbarBottom/NavbarBottom';
 import SubHeader from './Components/SubHeader/SubHeader';
 import NavbarMain from './Components/NavbarMain/NavbarMain'; 
 import GetUpTopButton from './Components/GetUpTopButton/GetUpTopButton';
+import  {PRODUCTS} from "./Static"
  
 
 function App() {
   return (
     <div className="App">
+      
       <SubHeader/>
       <Headroom>
         <div className="background">
@@ -28,7 +30,7 @@ function App() {
       <NavbarMain/>
       <NavbarBottom/>
    <Routes>
-    <Route path='/' element={<Home/>}/>
+    <Route path='/' element={<Home data={PRODUCTS}/>}/>
     <Route path='Login' element={<Login/>}/>
     <Route path='Wishes' element={<Wishes/>}/>
     <Route path='Katalog' element={<Katalog/>}/>
