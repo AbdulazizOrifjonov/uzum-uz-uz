@@ -1,0 +1,45 @@
+/* NavbarMain start */
+.bg-white{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .navbar__collaction {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+        height: 44px;
+        border-radius: 10px 10px 0 0;
+        justify-content: space-around;
+        box-shadow: 0 -4px 7px #ddd;
+
+    }
+.navbar__collaction li {
+    display: block !important;
+
+}
+}
+
+
+
+
+    .navbar__collaction li {
+        list-style: none !important;
+        display: none;
+    }
+    .navbar__collactions li {
+        list-style: none !important;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+
+
+/* NavbarMain end */

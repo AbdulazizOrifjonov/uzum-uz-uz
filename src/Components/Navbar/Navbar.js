@@ -6,8 +6,16 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser , FaRegHeart } from "react-icons/fa6";
 import { BiHome } from "react-icons/bi";
 import { RiMenuSearchLine } from "react-icons/ri";
+import { useLocation } from 'react-router-dom';
+
  
 function Navbar() {
+    const location = useLocation();
+
+    if (location.pathname.includes('login') || location.pathname.includes('admin')) {
+      return null; // or <></> if you prefer
+    }
+    
     return (
         <div className='container'>
      
@@ -81,7 +89,7 @@ function Navbar() {
           
 
                 </button></div>
-                <ul className="navbar__collaction">
+                <ul className="navbar__collactions">
                         <li className='navbar__item' id='none'>
                             <NavLink className="Navlink link" to={"/"}>
 
@@ -174,3 +182,27 @@ Savat
 }
 
 export default Navbar
+
+
+
+
+ 
+// import React from 'react';
+// import { useLocation } from 'react-router-dom';
+
+// function Navbar() {
+//   const location = useLocation();
+
+//   if (location.pathname.includes('login') || location.pathname.includes('admin')) {
+//     return null; // or <></> if you prefer
+//   }
+
+//   return (
+//     <div>
+//       sxdcfvg
+//     </div>
+//   );
+// }
+
+// export default Navbar;
+// // 
