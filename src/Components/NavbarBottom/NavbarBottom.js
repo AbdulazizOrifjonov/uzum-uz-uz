@@ -18,7 +18,8 @@ import { NavLink, useLocation } from 'react-router-dom';
  
 function NavbarBottom() {
   const location = useLocation();
-  if (location.pathname.includes('login') || location.pathname.includes('admin')) {
+  if (location.pathname.toLowerCase().includes('login') || location.pathname.includes('admin')) {
+
     return <></>;
   }
 

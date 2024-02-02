@@ -1,9 +1,15 @@
 import React from 'react'
+import "./Empty.css"
+import { useNavigate } from "react-router-dom"
 
-function Empty() {
+function Empty({title, url, desc, btnTitle, link}) {
+    const navigate = useNavigate()
   return (
-    <div>
-      
+    <div className='empty'>
+        <img src={url} width={150} alt="" />
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        <button onClick={()=> navigate(link)}>{btnTitle}</button>
     </div>
   )
 }

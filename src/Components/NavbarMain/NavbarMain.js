@@ -11,7 +11,8 @@ import "./NavbarMain.css"
 function NavbarMain() {
   const location = useLocation();
 
-  if (location.pathname.includes('login') || location.pathname.includes('admin')) {
+  if (location.pathname.toLowerCase().includes('login') || location.pathname.includes('admin')) {
+
     return null; // or <></> if you prefer
   }
   return (
