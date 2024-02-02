@@ -11,7 +11,7 @@ import Headroom from 'react-headroom';
 import NavbarBottom from './Components/NavbarBottom/NavbarBottom';
 import SubHeader from './Components/SubHeader/SubHeader';
 import NavbarMain from './Components/NavbarMain/NavbarMain'; 
-import GetUpTopButton from './Components/GetUpTopButton/GetUpTopButton';
+// import GetUpTopButton from './Components/GetUpTopButton/GetUpTopButton';
 import  {PRODUCTS} from "./Static"
  
 
@@ -37,7 +37,7 @@ function App() {
     <Route path='Katalog' element={<Katalog/>}/>
     <Route path='Cart' element={<Cart/>}/>
    </Routes>
-   <GetUpTopButton/>
+   {/* <GetUpTopButton/> */}
    <Footer/>
     </div>
   );
