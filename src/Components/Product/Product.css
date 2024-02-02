@@ -19,16 +19,17 @@
 .card {
     width: 240px;
     min-height: 360px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 6px;
+    background-color: #bebebe;
 }
 
 .card__image {
     width: 100%;
     overflow: hidden;
     height: 280px;
-    border: 1px solid blue;
-    border-radius: 6px   6px 0 0;
+    /* border: 1px solid blue; */
+    border-radius: 5px   5px 0 0;
 
 }
 
