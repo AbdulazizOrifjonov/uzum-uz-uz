@@ -28,6 +28,8 @@
     overflow: hidden;
     height: 280px;
     border: 1px solid blue;
+    border-radius: 6px   6px 0 0;
+
 }
 
 .card__image img {

@@ -1,7 +1,15 @@
 import React from 'react'
 import "./SubHeader.css"
 import uzb from "../../Assets/uzbekistan (1).png"
+import { useLocation } from 'react-router-dom';
+
 function SubHeader() {
+    const location = useLocation();
+
+
+    if (location.pathname.includes('login') || location.pathname.includes('admin')) {
+        return <></>;
+      }
     return (
         <div className='subheader'>
             <div className="container subheader__wrapper">

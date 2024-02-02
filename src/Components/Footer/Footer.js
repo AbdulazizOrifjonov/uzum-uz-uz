@@ -73,7 +73,11 @@ Uzumda soting</p>
 </p>
           </div>
           <div className="footer__end__left">
-            <p>«2024© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»</p>
+            <p>«2024© XK MCHJ «UZUM MARKET».
+                
+              </p>
+              <p>
+               STIR 309376127. Barcha huquqlar himoyalangan»</p>
           </div>
       </div>
     </div>

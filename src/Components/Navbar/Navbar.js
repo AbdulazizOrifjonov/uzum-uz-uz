@@ -8,12 +8,13 @@ import { BiHome } from "react-icons/bi";
 import { RiMenuSearchLine } from "react-icons/ri";
 import { useLocation } from 'react-router-dom';
 
+
  
 function Navbar() {
     const location = useLocation();
 
     if (location.pathname.includes('login') || location.pathname.includes('admin')) {
-      return  <></> 
+      return null; // or <></> if you prefer
     }
     
     return (
@@ -72,7 +73,7 @@ function Navbar() {
                         <path d="M4.82751 8.31985C4.82751 7.43619 5.54386 6.71985 6.42751 6.71985H19.2075C20.0912 6.71985 20.8075 7.43619 20.8075 8.31985H4.82751Z" fill="#7000FF" />
                         <path d="M4.82751 8.31985C4.82751 6.55254 6.2602 5.11985 8.02751 5.11985H17.6075C19.3748 5.11985 20.8075 6.55254 20.8075 8.31985C20.8075 8.31985 20.0912 8.31985 19.2075 8.31985H6.42751C5.54386 8.31985 4.82751 8.31985 4.82751 8.31985ZM20.8075 8.31985H4.82751H20.8075ZM4.82751 8.31985V6.71985V8.31985ZM20.8075 6.71985V8.31985V6.71985Z" fill="#7000FF" mask="url(#path-5-inside-2_1_18531)" />
                     </svg> */}
-                    <IoMenu style={{width:"23px", height:"23px"}}/>
+                    <IoMenu style={{width:"20px", height:"22px"}}/>
 
 
                     {/* <IoMenu /> */}
@@ -182,6 +183,17 @@ Savat
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
+
+
 
 
 
