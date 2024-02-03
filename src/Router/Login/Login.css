@@ -37,13 +37,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: inset 0 0 10px #aaa;
+    /* box-shadow: inset 0 0 10px #aaa; */
 
 }
 
 .inp {
-    box-shadow: 0 0 10px #aaa;
-    box-shadow: inset 0 0 10px #aaa;
+    /* box-shadow: 0 0 10px #aaa; */
+    /* box-shadow: inset 0 0 10px #aaa; */
     font-size: 20px;
     width: 95%;
     height: 52px;
@@ -57,7 +57,7 @@
    
 }
 .btn {
-    box-shadow: inset 0 0 3px #000000;
+    /* box-shadow: inset 0 0 3px #000000; */
     width: 95%;
     height: 42px;
     border-radius: 12px;
@@ -75,7 +75,7 @@
     background: var(--bg-py);
     border-radius: 8px;
     color: #ffffff;
-    box-shadow: inset 0 0 5px #000000;
+    /* box-shadow: inset 0 0 5px #000000; */
 
 }
 
@@ -86,13 +86,13 @@
 
 .btn:active {
     transition: 0.1s;
-    box-shadow: inset 0 0 10px #000000;
+    /* box-shadow: inset 0 0 10px #000000; */
 
 
 }
 .bosh:active {
     transition: 0.1s;
-    box-shadow: inset 0 0 10px #000000;
+    /* box-shadow: inset 0 0 10px #000000; */
 
 
 }

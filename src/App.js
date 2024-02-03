@@ -7,27 +7,34 @@ import Wishes from './Router/Wishes/Wishes';
 import Katalog from './Router/Katalog/Katalog';
 import Cart from './Router/Cart/Cart';
 import Footer from './Components/Footer/Footer';
-import Headroom from 'react-headroom';
+// import Headroom from 'react-headroom';
 import NavbarBottom from './Components/NavbarBottom/NavbarBottom';
 import SubHeader from './Components/SubHeader/SubHeader';
 import NavbarMain from './Components/NavbarMain/NavbarMain'; 
 // import GetUpTopButton from './Components/GetUpTopButton/GetUpTopButton';
 import  {PRODUCTS} from "./Static"
+// import NavbarNone from './Components/NavbarNone/NavbarNone';
  
 
 function App() {
+  
   return (
     <div className="App">
       
       <SubHeader/>
-      <Headroom>
-        <div className="background">
+      {/* <NavbarNone> */}
+
+      {/* <Headroom> */}
+        {/* <div className="background"> */}
 
 
       <Navbar/>
       <hr />
-        </div>
-      </Headroom>
+        {/* </div> */}
+      {/* </Headroom> */}
+      {/* </NavbarNone> */}
+
+
       <NavbarMain/>
       <NavbarBottom/>
    <Routes>
