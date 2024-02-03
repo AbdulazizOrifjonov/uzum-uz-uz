@@ -35,10 +35,7 @@ function NavbarBottom() {
           {/* {
                 DATA?.map((el, inx)=><p key={inx}>{el}</p>)
               } */}
-
-
-
-
+ 
           <NavLink className="gold" to={'/Elektronika'} >                 <div className="turkumlardir"><div className='johan'>       <p className='joha' >                          Elektronika                                     </p> </div>      </div>                        </NavLink>
           <NavLink className="gold" to={'/Maishiy'} >                 <div className="turkumlardir"><div className='johan'>     <p className='joha' >                          Maishiy ehnika                                      </p> </div>      </div>                      </NavLink>
           <NavLink className="gold" to={'/Kiyim'} >                 <div className="turkumlardir"><div className='johan'>   <p className='joha' >                          Kiyim                                     </p> </div>      </div>                                  </NavLink>
@@ -59,26 +56,7 @@ function NavbarBottom() {
           <NavLink className="gold" to={'/Kitoblar'} >                 <div className="turkumlardir"><div className='johan'>   <p className='joha' >                          Kitoblar                                     </p> </div>      </div>                               </NavLink>
           <NavLink className="gold" to={'/Dacha'} >                 <div className="turkumlardir"><div className='johan'>    <p className='joha' >                          Dacha, bogʻ va tomorqa                                     </p>  </div>     </div>                </NavLink>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
         </div>
       </div>
     </div>

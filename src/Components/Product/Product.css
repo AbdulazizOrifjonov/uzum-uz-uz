@@ -11,9 +11,16 @@
 }
 
 .warpper {
-    display: flex;
+    /* display: flex;
+    gap: 20px;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center; */
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -22,14 +29,22 @@
     /* border: 1px solid red; */
     border-radius: 6px;
     background-color: #bebebe;
-}
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
 
+}
+.card:hover{
+    box-shadow: 0 0 10px #35353562, 0 6px 10px #52525248 ;
+    cursor: pointer;
+}
 .card__image {
     width: 100%;
     overflow: hidden;
     height: 280px;
     /* border: 1px solid blue; */
-    border-radius: 5px   5px 0 0;
+    position: relative;
+    border-radius: 5px 5px 0 0;
 
 }
 
@@ -43,16 +58,108 @@
 .card:hover img {
     transform: scale(1.05);
 }
-.card__body{
+
+.card__body {
     padding: 8px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
-.card__title{
+
+.card__title {
     font-size: 14px;
     font-weight: 500;
-
+    flex: 1;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
- 
+
+}
+
+.card__body mark {
+    font-size: 12px;
+    padding: 2px 6px;
+    margin: 10px 0 20px;
+    display: inline-block;
+}
+
+.card__price-item {
+    font-size: 14px;
+    color: #555
+}
+
+.card__price-item p {
+    font-weight: 600;
+}
+
+.card__heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.card__cart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+@media screen and (max-width:600px) {
+    .card{
+        width: calc(50% - 6px);
+    }
+    .card__image{
+        width: 100%;
+        height: 280px;
+    }
+    .warpper{
+        gap: 12px;
+    }
+}
+@media screen and (max-width:550px) {
+    .warpper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .card{
+        width: auto;
+    }
+}
+@media screen and (max-width:430px) {
+    .card__image{
+        height: 250px;
+    }
+   
+    .card__price-item p {
+font-size: 12px;
+    }
+    .card__price-item del{
+font-size: 11px;
+    }
+
+}
+@media screen and (max-width:380px) {
+    .card__image{
+        /* width: 100%;
+        height: 220px; */
+    }
+   
+
+}
+@media screen and (max-width:340px) {
+    .card__image{
+        height: 180px;
+    }
 }

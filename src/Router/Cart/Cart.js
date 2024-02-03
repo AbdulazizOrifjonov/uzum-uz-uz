@@ -14,4 +14,5 @@ function Cart() {
     </div>
   )
 }
+//url="https://uzum.uz/static/img/hearts.cf414be.png"
 export default Cart

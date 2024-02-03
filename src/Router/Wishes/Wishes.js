@@ -1,17 +1,27 @@
-import React from 'react'
-import Empty from '../../Components/Empty/Empty'
+import React from 'react';
+import Empty from '../../Components/Empty/Empty';
+import { useSelector } from 'react-redux';
+import Product from '../../Components/Product/Product';
+
 function Wishes() {
+  const wishes = useSelector(state => state.wishes.value);
+  console.log(wishes);
+
   return (
     <div>
-      <Empty
-        title="Sizga yoqqanini qoʻshing"
-        url="https://uzum.uz/static/img/hearts.cf414be.png"
-        desc="Mahsulotdagi belgisini bosing. Akkauntga kiring va barcha saralanganlar saqlanib qoladi"
-        btnTitle="Akkountga kirish"
-        link="/login"
-      />
+      {wishes.length ? (
+        <Product data={wishes} />
+      ) : (
+        <Empty
+          title="Savatda hozircha mahsulot yoʻq"
+          url=" "
+          desc="Bosh sahifadagi to’plamlardan boshlang yoki kerakli mahsulotni qidiruv orqali toping"
+          btnTitle="Bosh sahifa"
+          link="/"
+        />
+      )}
     </div>
-  )
+  );
 }
 
-export default Wishes
+export default Wishes;

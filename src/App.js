@@ -13,7 +13,7 @@ import SubHeader from './Components/SubHeader/SubHeader';
 import NavbarMain from './Components/NavbarMain/NavbarMain'; 
 // import GetUpTopButton from './Components/GetUpTopButton/GetUpTopButton';
 import  {PRODUCTS} from "./Static"
-// import NavbarNone from './Components/NavbarNone/NavbarNone';
+import NavbarNone from './Components/NavbarNone/NavbarNone';
  
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       
       <SubHeader/>
-      {/* <NavbarNone> */}
+      <NavbarNone>
 
       {/* <Headroom> */}
         {/* <div className="background"> */}
@@ -32,7 +32,7 @@ function App() {
       <hr />
         {/* </div> */}
       {/* </Headroom> */}
-      {/* </NavbarNone> */}
+      </NavbarNone>
 
 
       <NavbarMain/>
