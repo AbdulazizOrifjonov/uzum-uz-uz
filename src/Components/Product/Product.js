@@ -63,44 +63,41 @@
 // export default Product
 
 
-
-
-
+// Product.js
 import React from 'react';
 import "./Product.css";
-import { CiHeart } from "react-icons/ci";
-import { IoBagAddOutline } from "react-icons/io5";
+import { FaRegHeart } from 'react-icons/fa6'; 
+import { IoBagAddSharp } from "react-icons/io5";
 import { FaHeart } from 'react-icons/fa6';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToWishes, remoweFromWishes } from '../../Context/wishesSlice';
+import { toggleWishes } from '../../Context/wishesSlice';
 
 function Product({ data }) {
     const dispatch = useDispatch();
-    let wishes = useSelector(state => state.wishes.value);
+    const wishes = useSelector(state => state.wishes.value);
 
-    console.log(data);
+  
+
     return (
         <div className='container'>
-            <h2 className='product__heanding'>Arzon narxlar
-                <span>&#10095;</span></h2>
-            <div className="warpper">
-                {data?.map((el) =>
-                    <div className="card" key={el.id}>
+            <h2 className='product__heading'>Arzon narxlar
+                <span>&#10095;</span>
+            </h2>
+            <div className="wrapper">
+                {data?.map((el) => (
+                    <div className="card" key={el._id}>
                         <div className="card__image">
                             <img src={el.url} alt="" />
-                            {wishes?.some((item) => item._id === el.id) ?
-    <div
-        onClick={() => dispatch(remoweFromWishes(el))}
-        className="card__heart filled">
-        <CiHeart />
-    </div> :
-    <div
-        onClick={() => dispatch(addToWishes(el))}
-        className="card__heart">
-        <FaHeart />
-    </div>
-}
-
+                            <div
+                                onClick={() => dispatch(toggleWishes(el))}
+                                className={`card__heart ${wishes?.some((item) => item._id === el._id)}`}
+                            >
+                                {wishes?.some((item) => item._id === el._id) ? (
+                                    <FaHeart style={{ color: "var(--bg-py)" }} />
+                                ) : (
+                                    <FaRegHeart />
+                                )}
+                            </div>
                         </div>
                         <div className="card__body">
                             <span className='card__title'>{el.title}</span>
@@ -113,12 +110,12 @@ function Product({ data }) {
                                     <p>{el.price?.brm()} so'm</p>
                                 </div>
                                 <div className='card__cart'>
-                                    <IoBagAddOutline />
+                                    <IoBagAddSharp />
                                 </div>
                             </div>
                         </div>
                     </div>
-                )}
+                ))}
             </div>
         </div>
     );
