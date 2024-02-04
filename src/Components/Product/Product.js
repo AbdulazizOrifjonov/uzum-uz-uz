@@ -86,7 +86,7 @@ function Product({ data }) {
                 {data?.map((el) => (
                     <div className="card" key={el._id}>
                         <div className="card__image">
-                            <img src={el.url} alt="" />
+                            <img src={el.url} alt="internetingiz yaxshi emasa !!!..." />
                             <div
                                 onClick={() => dispatch(toggleWishes(el))}
                                 className={`card__heart ${wishes?.some((item) => item._id === el._id)}`}
