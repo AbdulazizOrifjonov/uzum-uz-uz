@@ -28,7 +28,7 @@
     min-height: 360px;
     /* border: 1px solid red; */
     border-radius: 6px;
-    background-color: #bebebe;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     transition: .3s;
@@ -43,7 +43,7 @@
     height: 280px;
     /* border: 1px solid blue; */
     position: relative;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px ;
     cursor: pointer;
 
 }
@@ -109,11 +109,15 @@
     right: 10px;
     width: 30px;
     height: 30px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(121, 121, 121);
     border-radius: 50px;
     display: grid;
     place-items: center;
     font-size: 18px;
+    color: #555;
+}
+.heart{
+ color: #555;
 }
 @media screen and (max-width:600px) {
     .card{
@@ -139,7 +143,7 @@
 }
 @media screen and (max-width:430px) {
     .card__image{
-        height: 250px;
+        /* height: 250px; */
     }
    
     .card__price-item p {
@@ -152,16 +156,18 @@ font-size: 11px;
 }
 @media screen and (max-width:380px) {
     .card__image{
-        height: 220px;
+        height: 200px;
     }
     .card{
-        height: 350px;
+        width: 100%;
+        min-height: 290px;
     }
+    
    
 
 }
 @media screen and (max-width:340px) {
     .card__image{
-        height: 180px;
+        /* height: 180px; */
     }
 }

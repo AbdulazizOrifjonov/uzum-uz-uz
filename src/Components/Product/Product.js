@@ -66,9 +66,8 @@
 // Product.js
 import React from 'react';
 import "./Product.css";
-import { FaRegHeart } from 'react-icons/fa6'; 
+import { IoIosHeartEmpty , IoIosHeart } from "react-icons/io";
 import { IoBagAddSharp } from "react-icons/io5";
-import { FaHeart } from 'react-icons/fa6';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleWishes } from '../../Context/wishesSlice';
 
@@ -79,10 +78,10 @@ function Product({ data }) {
   
 
     return (
-        <div className='container'>
-            <h2 className='product__heading'>Arzon narxlar
+        <div className='containera'>
+            {/* <h2 className='product__heading'>Arzon narxlar
                 <span>&#10095;</span>
-            </h2>
+            </h2> */}
             <div className="wrapper">
                 {data?.map((el) => (
                     <div className="card" key={el._id}>
@@ -93,16 +92,16 @@ function Product({ data }) {
                                 className={`card__heart ${wishes?.some((item) => item._id === el._id)}`}
                             >
                                 {wishes?.some((item) => item._id === el._id) ? (
-                                    <FaHeart style={{ color: "var(--bg-py)" }} />
+                                    <IoIosHeart  className='heart' style={{ color: "var(--bg-py)" }} />
                                 ) : (
-                                    <FaRegHeart />
+                                    <IoIosHeartEmpty className='heart' />
                                 )}
                             </div>
                         </div>
                         <div className="card__body">
                             <span className='card__title'>{el.title}</span>
                             <mark>
-                                {(el.price * 1.5 / 12)?.brm()} so'm
+                                {(el.price * 1.5 / 12)?.brm()} so'm /oyiga
                             </mark>
                             <div className="card__prices">
                                 <div className="card__price-item">
