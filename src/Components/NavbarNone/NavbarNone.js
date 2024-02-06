@@ -2,6 +2,7 @@ import React from 'react'
 import Headroom from 'react-headroom'
 import Navbar from '../Navbar/Navbar'
 import {  useLocation } from 'react-router-dom';
+import "./NavbarNone.css"
 
 // import "./NavbarNone.css"
 function NavbarNone() {
@@ -11,12 +12,15 @@ function NavbarNone() {
       return <></>;
     }
   return (
+    <div className="Rs">
+
       <Headroom>
             <div className='background'>
             <Navbar/>
         <hr />
         </div>
         </Headroom> 
+    </div>
   )
 }
 

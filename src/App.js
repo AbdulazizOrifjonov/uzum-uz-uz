@@ -14,6 +14,7 @@ import NavbarMain from './Components/NavbarMain/NavbarMain';
 // import GetUpTopButton from './Components/GetUpTopButton/GetUpTopButton';
 import  {PRODUCTS} from "./Static"
 import NavbarNone from './Components/NavbarNone/NavbarNone';
+import SingilPage from './Router/SingilPage/SingilPage';
  
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
     <Route path='Wishes' element={<Wishes/>}/>
     <Route path='Katalog' element={<Katalog/>}/>
     <Route path='Cart' element={<Cart/>}/>
+    <Route path='product/:_id' element={<SingilPage data={PRODUCTS} />} />
    </Routes>
    {/* <GetUpTopButton/> */}
    <Footer/>

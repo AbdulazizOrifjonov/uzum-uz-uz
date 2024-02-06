@@ -67,9 +67,10 @@
 import React from 'react';
 import "./Product.css";
 import { IoIosHeartEmpty , IoIosHeart } from "react-icons/io";
-import { IoBagAddSharp } from "react-icons/io5";
+import { BsBagPlus } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleWishes } from '../../Context/wishesSlice';
+import { NavLink } from 'react-router-dom';
 
 function Product({ data }) {
     const dispatch = useDispatch();
@@ -85,23 +86,31 @@ function Product({ data }) {
             <div className="wrapper">
                 {data?.map((el) => (
                     <div className="card" key={el._id}>
-                        <div className="card__image">
-                            <img src={el.url} alt="                                                      internetingiz yaxshi emasa !!!..." />
+                        <div  className="card__image">
+
+                        <NavLink to={`/product/${el._id}`} className="card__image">
+                            <img src={el.url} alt="internetingiz yaxshi emasa !!!..." />
+                            </NavLink>
+
                             <div
                                 onClick={() => dispatch(toggleWishes(el))}
                                 className={`card__heart ${wishes?.some((item) => item._id === el._id)}`}
-                            >
+                                >
                                 {wishes?.some((item) => item._id === el._id) ? (
                                     <IoIosHeart  className='heart' style={{ color: "var(--bg-py)" }} />
-                                ) : (
+                                    ) : (
                                     <IoIosHeartEmpty className='heart' />
                                 )}
                             </div>
-                        </div>
+                                    </div>
                         <div className="card__body">
                             <span className='card__title'>{el.title}</span>
                             <mark>
+                                <p>
                                 {(el.price * 1.5 / 12)?.brm()} so'm /oyiga
+                                </p>
+
+                                
                             </mark>
                             <div className="card__prices">
                                 <div className="card__price-item">
@@ -109,7 +118,7 @@ function Product({ data }) {
                                     <p>{el.price?.brm()} so'm</p>
                                 </div>
                                 <div className='card__cart'>
-                                    <IoBagAddSharp />
+                                    <BsBagPlus />
                                 </div>
                             </div>
                         </div>
@@ -121,3 +130,6 @@ function Product({ data }) {
 }
 
 export default Product;
+
+
+

@@ -1,0 +1,352 @@
+.singlPage {
+    width: 100%;
+    /* height: auto; */
+    background-color: #d4cdcdc3;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.singleft {
+    /* width: 35%; */
+    /* height: 450px; */
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.singlright {
+    /* width: 65%; */
+    /* height: 450px; */
+    padding: 10px;
+    /* background-color: gold; */
+}
+
+.singlpage_slider_image {
+    /* padding: 10px 0; */
+    height: 430px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100px;
+}
+
+.slider_images {
+    max-height: 100%;
+    overflow: auto;
+    display: inline-block;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 3px solid red; */
+    gap: 8px;
+    position: relative;
+    /* align-items: center; */
+    /* background-color: #000000; */
+    padding: 8px 0;
+    /* width: 100px; */
+}
+
+.singlpage_slider_image img {
+    object-fit: cover !important;
+
+}
+
+.arrow_down {
+    font-size: 30px;
+    background-color: #00000053;
+    color: #fff;
+    position: absolute;
+    /* z-index: 1; */
+    left: 30px;
+    bottom: 10px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow_up {
+    font-size: 30px;
+    background-color: #00000053;
+    color: #fff;
+    position: absolute !important;
+    z-index: 1;
+    left: 30px;
+    top: 10px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.singl__slider_images {
+    border-radius: 10px;
+    width: 100px;
+    object-fit: cover !important;
+    cursor: pointer;
+}
+
+.singlpage_main_image_img {
+    width: 311px;
+    border-radius: 10px;
+    height: 416px;
+
+    /* object-fit: cover !important; */
+
+}
+
+.singlpage_main_image {
+    /* background-color: #ff0000; */
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.arrow_right_main {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    top: center;
+    font-size: 30px;
+    background-color: #00000053;
+    color: #fff;
+    position: absolute;
+    /* z-index: 1; */
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow_left_main {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    top: center;
+    font-size: 30px;
+    background-color: #00000053;
+    color: #fff;
+    position: absolute;
+    /* z-index: 1; */
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name_none {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.singilpage_color {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4.6px 0;
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.imgs img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 70px;
+}
+
+.singlePage_quontitiy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4.6px 0;
+}
+
+.quontitiy {
+    width: 120px;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 19px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4.6px 0;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.correct_clac {
+    padding: 5px 7px;
+    background-color: var(--bg-py);
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.add_cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add_to_cart {
+    /* padding: 10px 40px; */
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.add_to_cart:nth-child(1) {
+    background-color: var(--bg-py);
+
+}
+
+.add_to_cart:nth-child(2) {
+    border: 1px solid var(--bg-py);
+    color: var(--bg-py);
+
+}
+
+.name_none h1 {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1150px) {
+    .name_none h1 {
+        font-size: 18px;
+        width: auto;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .add_to_cart {
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .singlPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .singleft {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .singlright {
+        width: 100%;
+        height: auto;
+    }
+
+    .name_none h1 {
+        font-size: 20px;
+    }
+
+    .singlpage_main_image {
+        width: 100%;
+        /* padding:0 20px; */
+
+    }
+
+    .singlpage_main_image_img {
+        width: 90%;
+        object-fit: cover !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .singilpage_color {
+        width: 100%;
+        height: auto;
+    }
+    .singilpage_color .imgs{
+        display: flex;
+        gap: 10px;  
+    }
+}
+@media screen and (max-width: 440px){
+.add_cart{
+    display: flex;
+    flex-direction: column;
+}
+.add_to_cart{
+    width: 100%;
+    height: 40px;
+}
+.bottom {
+display: flex;
+flex-direction: column;align-items: flex-start;
+}
+ 
+}
+
+/* 
+@media screen and (max-width: 500px) {
+  
+    .singl__slider_images{
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .slider_images{
+        max-height: 100%;
+        height: 80%;
+ 
+    }
+    .singlpage_main_image{
+        width: 300px;
+        height: 300px;
+    }
+    .singlpage_main_image_img{
+
+            object-fit: cover !important;
+width: 100%;
+height: auto;   
+        }
+} */
