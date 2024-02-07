@@ -22,7 +22,23 @@ function Cart() {
               <img width={100} src={el.url[0]} alt="" />
               <p>{el.title}</p>
               <p>{el.quontitiy}</p>
-              <button onClick={()=> dispatch(incCart(el))}>+</button>
+              <button  onClick={()=> dispatch(incCart(el))}>+</button>
+              <br />
+              <br />
+              <br />
+              <br />
+              <button onClick={()=> dispatch(decCart(el))}>-</button>
+              <br />
+              <br />
+              <br />
+              <br />
+              <button onClick={()=> dispatch(removCart(el))}>🗑 in </button>
+              <br />
+              <br />
+              <br />
+
+              <br />
+              <button onClick={()=> dispatch(removAllCart(el))}>🗑</button>
             </div>
           ))}
         </div>) :
