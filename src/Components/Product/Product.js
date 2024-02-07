@@ -157,7 +157,7 @@ function Product({ data }) {
                     <div className="card" key={el._id}>
                         <div className="card__image">
                             <NavLink to={`/product/${el._id}`} className="card__image">
-                                <img src={el.url} alt="internetingiz yaxshi emasa !!!..." />
+                                <img src={el.url[0]} alt="internetingiz yaxshi emasa !!!..." />
                             </NavLink>
                             <div
                                 onClick={() => dispatch(toggleWishes(el))}
