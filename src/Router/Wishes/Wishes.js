@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Empty from '../../Components/Empty/Empty';
 import { useSelector } from 'react-redux';
 import Product from '../../Components/Product/Product';
 
 function Wishes() {
   const wishes = useSelector(state => state.wishes.value);
-  console.log(wishes);
+  useEffect(()=>{
+    window.scrollTo(0, 0); 
+  },[])
 
   return (
     <div>

@@ -1,65 +1,21 @@
-// import React from 'react'
-// import "./SingilPage.css"
-// import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-// function SingilPage({data}) {
-//   return (
-//     <div className='container'>
-//       {
-//         data?.map((el)=>
-//       <div key={el} className="singlPage">
-//         <div className="singleft">
-//           <div className="singlpage_slider_image">
-//             <button>
-// <IoIosArrowUp className='arrow_up'/>
-//             </button>
-
-
-//         <img src={el.url} width={100} alt="" />
-//         <img src={el.url} width={100} alt="" />
-//         <img src={el.url} width={100} alt="" />
-//         <img src={el.url} width={100} alt="" />
-//         <img src={el.url} width={100} alt="" />
-//         <img src={el.url} width={100} alt="" />
-//         <button>
-
-//             <IoIosArrowDown className='arrow_down'/>
-//         </button>
-//           </div>
-// <div className="singlpage_main_image">
-//         <img src={el.url} width={300} alt="" />
-// </div>
-
-//         </div>
-//         <div className="singlright">
-
-//         <h1>{el.title}</h1>
-//         </div>
-//       </div>
-//       )
-//       }
-//     </div>
-//   )
-// }
-
-// export default SingilPage
-// SingilPage.js
-
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {
   //  IoIosArrowUp, IoIosArrowDown,
-   IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+  IoIosArrowBack, IoIosArrowForward
+} from "react-icons/io";
 import "./SingilPage.css"
 import { HiPlus, HiMinus } from "react-icons/hi";
-// import { ImFire } from "react-icons/im";
+
 
 
 function SingilPage({ data }) {
 
   const { _id } = useParams();
   const product = data.find((el) => el._id === _id);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   if (!product) {
     return <div>Product not found</div>;
   }
@@ -126,9 +82,15 @@ function SingilPage({ data }) {
 
                 <p>Miqdor:</p>
                 <div className="quontitiy">
-                  <HiMinus />
-                  1
-                  <HiPlus />
+                  <button>
+                    <HiMinus />
+                  </button>
+                  <p>
+                    1
+                  </p>
+                  <button>
+                    <HiPlus />
+                  </button>
                 </div>
 
               </div>
