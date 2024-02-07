@@ -78,7 +78,7 @@
 //     const dispatch = useDispatch();
 //     const wishes = useSelector(state => state.wishes.value);
 
-  
+
 
 //     return (
 //         <div className='containera'>
@@ -112,7 +112,7 @@
 //                                 {(el.price * 1.5 / 12)?.brm()} so'm /oyiga
 //                                 </p>
 
-                                
+
 //                             </mark>
 //                             <div className="card__prices">
 //                                 <div className="card__price-item">
@@ -139,7 +139,7 @@
 // Product.js
 import React from 'react';
 import "./Product.css";
-import { IoIosHeartEmpty , IoIosHeart } from "react-icons/io";
+import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { BsBagPlus } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleWishes } from '../../Context/wishesSlice';
@@ -155,17 +155,17 @@ function Product({ data }) {
             <div className="wrapper">
                 {data?.map((el) => (
                     <div className="card" key={el._id}>
-                        <div  className="card__image">
+                        <div className="card__image">
                             <NavLink to={`/product/${el._id}`} className="card__image">
                                 <img src={el.url} alt="internetingiz yaxshi emasa !!!..." />
                             </NavLink>
                             <div
                                 onClick={() => dispatch(toggleWishes(el))}
                                 className={`card__heart ${wishes?.some((item) => item._id === el._id)}`}
-                                >
+                            >
                                 {wishes?.some((item) => item._id === el._id) ? (
-                                    <IoIosHeart  className='heart' style={{ color: "var(--bg-py)" }} />
-                                    ) : (
+                                    <IoIosHeart className='heart' style={{ color: "var(--bg-py)" }} />
+                                ) : (
                                     <IoIosHeartEmpty className='heart' />
                                 )}
                             </div>
@@ -174,7 +174,7 @@ function Product({ data }) {
                             <span className='card__title'>{el.title}</span>
                             <mark>
                                 <p>
-                                {(el.price * 1.5 / 12)?.brm()} so'm /oyiga
+                                    {(el.price * 1.5 / 12)?.brm()} so'm /oyiga
                                 </p>
                             </mark>
                             <div className="card__prices">

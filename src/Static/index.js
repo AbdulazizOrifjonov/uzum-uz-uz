@@ -12,7 +12,7 @@ export const PRODUCTS = [
         title: "Smartfon Honor X8b 8/128/256 GB, NFC, 2NanoSIM, ko'zni himoya qiluvchi AMOLED ekrani bilan",
         price: 3199000,
         category: "texnika",
-        url: ["https://images.uzum.uz/cmf23e9s99ouqbfq4g9g/original.jpg"],
+        url: ["https://uzum-uz-zeta.vercel.app/static/media/smartfon.2cee2832b4e1c1108c8c.jpg"],
         desc: "lorem ipsum dolor"
     },
     {
