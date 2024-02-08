@@ -181,6 +181,11 @@
     display: flex;
     gap: 10px;
     cursor: pointer;
+
+}
+.imgs img:hover{
+    padding: 1px;
+    border: 1px solid #aaa;
 }
 
 .singlePage_quontitiy {

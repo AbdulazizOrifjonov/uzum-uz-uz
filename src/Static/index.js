@@ -1,7 +1,7 @@
 export const PRODUCTS = [
     {
         _id: "pro-1",
-        title: "Bir zumda chop etish fotoapparati Fujifilm Instax Mini 12, 5 xil rang",
+        title: "   Bir zumda chop etish fotoapparati Fujifilm Instax Mini 12, 5 xil rang",
         price: 1359000 ,
         category: "texnika",
         url: ["https://images.uzum.uz/cgrvu8fhj8j9g69d50ig/original.jpg"],

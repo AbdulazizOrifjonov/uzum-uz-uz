@@ -7,6 +7,7 @@ import { FaRegUser , FaRegHeart } from "react-icons/fa6";
 import { BiHome } from "react-icons/bi";
 import { RiMenuSearchLine } from "react-icons/ri";
 import { useLocation } from 'react-router-dom';
+import Wishes from '../../Router/Wishes/Wishes';
 
 
 
@@ -171,6 +172,7 @@ istaklar
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.65784 6.5C9.65784 4.88779 10.898 3.5 12.6578 3.5C14.4176 3.5 15.6578 4.88779 15.6578 6.5V7.5H9.65784V6.5ZM8.15784 9V11.5H9.65784V9H15.6578V11.5H17.1578V9H19.1578V19.75C19.1578 20.1642 18.822 20.5 18.4078 20.5H6.90784C6.49363 20.5 6.15784 20.1642 6.15784 19.75V9H8.15784ZM8.15784 7.5V6.5C8.15784 4.11221 10.0177 2 12.6578 2C15.298 2 17.1578 4.11221 17.1578 6.5V7.5H19.9078H20.6578V8.25V19.75C20.6578 20.9926 19.6504 22 18.4078 22H6.90784C5.6652 22 4.65784 20.9926 4.65784 19.75V8.25V7.5H5.40784H8.15784Z" fill="#1F2026"/>
 </svg> */}
 <FiShoppingCart />
+{Wishes.length > 0 && <sub>{}</sub>}
 
 <p className='navbar__bottom__bar'>
 

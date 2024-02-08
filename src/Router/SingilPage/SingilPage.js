@@ -62,7 +62,7 @@ function SingilPage({ data }) {
             <div className="name_none">
 
               <h1>{product.title}</h1>
-              <p>Sotuvchi: xechki</p>
+              <p>Sotuvchi: xechki</p> 
               <div>Yetkazib berish:
                 1 kun, bepul</div>
             </div>
