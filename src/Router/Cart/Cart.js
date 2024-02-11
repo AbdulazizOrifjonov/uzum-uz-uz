@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Empty from '../../Components/Empty/Empty'
 import {  useSelector } from 'react-redux';
 // import {incCart, decCart, removCart, removAllCart} from "../../../src/Context/cartSlice"
-import CartProduct from '../../Components/Cart-product/CartProduct ';
+import CartProduct from '../../Components/Cart-product/CartProduct';
 
 function Cart() {
 
@@ -14,16 +14,20 @@ function Cart() {
   return (
     <div className='h-700'>
       {
-        carts ? 
-        <CartProduct data={carts}/>
-         :
-         <Empty
-            title="Savatda hozircha mahsulot yoʻq"
+        carts.length  ? (
+          <CartProduct data={carts}/>
+
+        )
+         :(
+
+           <Empty
+           title="Savatda hozircha mahsulot yoʻq"
             url="https://uzum.uz/static/img/shopocat.490a4a1.png"
             desc="Bosh sahifadagi to’plamlardan boshlang yoki kerakli mahsulotni qidiruv orqali toping"
             btnTitle="Bosh sahifa"
             link="/"
           />
+            )
       }
 
     </div>

@@ -10,7 +10,7 @@ function Wishes() {
   },[])
 
   return (
-    <div>
+    <div className=''> 
       {wishes.length ? (
         <Product data={wishes} />
       ) : (

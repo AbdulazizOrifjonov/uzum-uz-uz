@@ -108,7 +108,7 @@ export const PRODUCTS = [
         title: "Smartfon Apple iPhone 14 Pro Max  ",
         price: 19381000,
         category: "texnika",
-        url: ["https://images.uzum.uz/cmus4m925kub33f26ar0/original.jpg "],
+        url: ["https://assets.asaxiy.uz/product/items/desktop/c8ed21db4f678f3b13b9d5ee164890882023092315103648645HUWqea3pTc.png.webp "],
         desc: "lorem ipsum dolor"
     },
     {

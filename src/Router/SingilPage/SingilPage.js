@@ -6,6 +6,7 @@ import {
 } from "react-icons/io";
 import "./SingilPage.css"
 import { HiPlus, HiMinus } from "react-icons/hi";
+import Product from '../../Components/Product/Product';
 
 
 
@@ -15,7 +16,7 @@ function SingilPage({ data }) {
   const product = data.find((el) => el._id === _id);
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, [_id])
   if (!product) {
     return <div>Product not found</div>;
   }
@@ -62,7 +63,7 @@ function SingilPage({ data }) {
             <div className="name_none">
 
               <h1>{product.title}</h1>
-              <p>Sotuvchi: xechki</p> 
+              <p>Sotuvchi: xechki</p>
               <div>Yetkazib berish:
                 1 kun, bepul</div>
             </div>
@@ -106,13 +107,13 @@ function SingilPage({ data }) {
                 </div>
               </div>
               <div className="add_cart">
-                <button className='add_to_cart'>Savatga qoʻshish</button>
+                <button  className='add_to_cart'>Savatga qoʻshish</button>
                 <button className='add_to_cart'>Tugmani 1 bosishda xarid qilish</button>
               </div>
             </div>
           </div>
         </div>
-
+        <Product data={data.slice(0, 5)} title="Eng so'ngi mahsulotlar" />
       </div>
     </div>
   );

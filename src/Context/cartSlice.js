@@ -26,12 +26,18 @@ const { actions, reducer } = createSlice({
         decCart(state, { payload }) {
             let index = state.value.findIndex(el => el._id === payload._id)
             state.value = state.value.map((item, inx) => index === inx ? { ...item, quontitiy: item.quontitiy - 1 } : item)
+            localStorage.setItem ('cart' , JSON.stringify(state.value))
+
         },
         removCart(state, { payload }) {
             state.value = state.value.filter((item)=> item._id !== payload._id)
+            localStorage.setItem ('cart' , JSON.stringify(state.value))
+
         },
         removAllCart(state) {
            state.value = []
+           localStorage.setItem ('cart' , JSON.stringify(state.value))
+
         }
     }
 });

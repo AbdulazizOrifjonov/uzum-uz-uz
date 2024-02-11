@@ -17,8 +17,10 @@ function Product({ data }) {
 
     return (
         <div className='containera'>
+
             <div className="wrapper">
                 {data?.map((el) => (
+                    
                     <div className="card" key={el._id}>
                         <div className="card__image">
                             <NavLink to={`/product/${el._id}`} className="card__image">
@@ -36,7 +38,7 @@ function Product({ data }) {
                             </div>
                         </div>
                         <div className="card__body">
-                            <span className='card__title'>{el.title}</span>
+                            <span title={el.title}  className='card__title'>{el.title}</span>
                             <mark>
                                 <p>
                                     {(el.price * 1.5 / 12)?.brm()} so'm /oyiga
@@ -55,6 +57,7 @@ function Product({ data }) {
                     </div>
                 ))}
             </div>
+
         </div>
     );
 }

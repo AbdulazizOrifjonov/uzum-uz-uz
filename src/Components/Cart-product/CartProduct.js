@@ -64,6 +64,7 @@ import { incCart, decCart,  removCart } from '../../Context/cartSlice';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux'; // Fixed import statement
 import { FaRegTrashAlt } from 'react-icons/fa';
+import CartForm from './CartForm';
 
 function CartProduct({ data }) { // Modified to accept props
   const dispatch = useDispatch();
@@ -77,7 +78,7 @@ function CartProduct({ data }) { // Modified to accept props
         <div className="cart__products">
           {data?.map((el) => (
             <div key={el.title} className="cart__item">
-              <Link to={`/product/${el.id}`} className="cart__item-left">
+              <Link to={`/product/${el._id}`} className="cart__item-left">
                 <img src={el.url} alt={el.title} />
                 <div>
                   <h4>{el.title}</h4>
@@ -86,7 +87,7 @@ function CartProduct({ data }) { // Modified to accept props
               </Link>
               <div className="cart__item-right">
                 <div className="cart__item-btns">
-                  <button onClick={() => dispatch(decCart(el))}>-</button>
+                  <button disabled={el.quontitiy < 1} onClick={() => dispatch(decCart(el))}>-</button>
                   <button>{el.quontitiy}</button>
                   <button onClick={() => dispatch(incCart(el))}>+</button>
                 </div>
@@ -102,20 +103,7 @@ function CartProduct({ data }) { // Modified to accept props
           ))}
         </div>
         <div className="cart__register">
-          <div className="input__reg">
-            <h3>Ma'lumotlarni to'ldiring:</h3>
-            <form action="">
-              <input type="text" placeholder="To'liq ismingiz" />
-              <input type="text" placeholder="+998 00-000-00-00" />
-              <input type="text" placeholder="Manzilingiz" />
-              <input required type="text" placeholder="Habar yo'llash" />
-              <div className="total">
-                <p>Umumiy narx: </p>
-                <b> {data?.reduce((a, b)=> a + b.price + b.quantity, 0 )?.brm()}  so'm</b>
-              </div>
-              <button className="btn-reg"> Rasmiylashtirishga o'tish</button>
-            </form>
-          </div>
+        <CartForm data={data}/>
         </div>
       </div>
     </div>

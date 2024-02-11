@@ -8,6 +8,7 @@
     border: 1px solid #ddd;
     padding: 16px;
     border-radius: 8px;
+    height: auto;
 }
 .cart__item{
     display: grid;
@@ -88,7 +89,7 @@
     border: none;
     background: var(--bg-sy);
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 16px;outline: none;
 }
 .input__reg h3{
     text-align: center;
