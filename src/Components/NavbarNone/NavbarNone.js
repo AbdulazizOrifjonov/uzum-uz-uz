@@ -5,7 +5,7 @@ import {  useLocation } from 'react-router-dom';
 import "./NavbarNone.css"
 
 // import "./NavbarNone.css"
-function NavbarNone() {
+function NavbarNone({data}) {
     const location = useLocation();
     if (location.pathname.toLowerCase().includes('login') || location.pathname.includes('admin')) {
   
@@ -16,7 +16,7 @@ function NavbarNone() {
 
       <Headroom>
             <div className='background'>
-            <Navbar/>
+            <Navbar data={data}/>
         <hr />
         </div>
         </Headroom> 

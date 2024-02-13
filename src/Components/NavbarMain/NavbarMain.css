@@ -33,7 +33,7 @@
 
     .navbar__collaction li {
         list-style: none !important;
-        display: none;
+        display: none !important;
     }
     .navbar__collactions li {
         list-style: none !important;

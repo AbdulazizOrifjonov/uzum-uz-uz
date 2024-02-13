@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+// import Navbar from './Components/Navbar/Navbar';
 import Home from './Router/Home/Home';
 import Login from './Router/Login/Login';
 import Wishes from './Router/Wishes/Wishes';
@@ -23,17 +23,7 @@ function App() {
     <div className="App">
       
       <SubHeader/>
-      <NavbarNone>
-
-      {/* <Headroom> */}
-        {/* <div className="background"> */}
-
-
-      <Navbar/>
-      <hr />
-        {/* </div> */}
-      {/* </Headroom> */}
-      </NavbarNone>
+      <NavbarNone data={PRODUCTS}/>
 
 
       <NavbarMain/>

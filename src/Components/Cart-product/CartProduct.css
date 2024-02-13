@@ -17,6 +17,7 @@
     color: #444;
     position: relative;
     border-bottom: 1px solid #ddd;
+   
 }
 .cart__item:last-child{
     border-bottom: none;
